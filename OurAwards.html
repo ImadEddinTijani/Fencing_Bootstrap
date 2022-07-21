@@ -1,26 +1,47 @@
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fencing For Victory - Homepage</title>
+    <title>Fencing For Victory - Our awards</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         section{
           padding: 40px 15;
         }
-    </style>
+        .carousel {
+          height: 450px;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .carouseling{
+          padding-top: 6em;
+        }
 
-    <style>
-      .carouselBasicExample{
-        margin-top: 500px;
-      }
+        .carousel-control-prev, .carousel-control-next {
+          opacity: 0 !important;
+          background-color: transparent !important;
+        }
+
+        /* .carousel-control-next-icon, .carousel-control-prev-icon{
+          color: white !important;
+          opacity: 1;
+        } */
+
+        /* nav{
+          font-size:30%;
+        } */
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
         <a class="navbar-brand" href="index.html">Fencing For Victory</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,6 +60,9 @@
             <li class="nav-item active display-5">
               <a class="nav-link" href="OurAwards.html">Our Awards <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active display-5">
+              <a class="nav-link" href="FAQ.html">FAQ <span class="sr-only">(current)</span></a>
+          </li>
             <li class="nav-item active">
                 <a class="nav-link" href="CourseRegistration.html">Course Registration <span class="sr-only">(current)</span></a>
             </li>            
@@ -46,109 +70,61 @@
         </div>
     </nav>  
 
+   
+    <!-- Carousel Head Elements -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
 
-    <!-- Carrousel -->
-    <!-- Carousel wrapper -->
-<div
-id="carouselBasicExample"
-class="carousel slide carousel-fade"
-data-mdb-ride="carousel"
->
-<!-- Indicators -->
-<div class="carousel-indicators">
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="0"
-    class="active"
-    aria-current="true"
-    aria-label="Slide 1"
-  ></button>
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="1"
-    aria-label="Slide 2"
-  ></button>
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="2"
-    aria-label="Slide 3"
-  ></button>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script> 
+  <!-- End of Carousel Elements -->
 
-<!-- Inner -->
-<div class="carousel-inner">
-  <!-- Single item -->
-  <div class="carousel-item active">
-    <img
-      src="./Assets/award.png"
-      class="d-block w-100"
-      alt="Sunset Over the City"
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>First slide label</h5>
-      <p>
-        Nulla vitae elit libero, a pharetra augue mollis interdum.
-      </p>
+
+   <!-- Carrousel -->
+   <section class="carouseling">
+     <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- .carousel  creates a carousel -->
+  <!-- .slide  Adds a CSS transition and animation effect when transitioning from one element to the next. If you don't want to use this effect, you can remove this class. -->
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <!-- .carousel indicators create the dots. The ots can inform the user which slide it is on and how many images are in this carousel.-->
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <!-- .carousel-inner add slides to the carousel -->
+    <div class="carousel-item active">
+      <img src="./Assets/fencing_gallery_1.png" class="d-block" style="width: 100%" />
+    </div>
+    <div class="carousel-item">
+      <!-- .carousel-item specifies the content of each slide -->
+      <img src="./Assets/fencing_gallery_2.png" class="d-block" style="width: 100%" />
+      <div class="carousel-caption">
+        <h3>Why did the snowman get a divorce?</h3>
+        <p>His wife was a total flake...</p>
+    </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="./Assets/fencing_gallery_3.png" class="d-block" style="width: 100%" />
+      <div class="carousel-caption">
+        <h3>Why did the snowman get a divorce?</h3>
+        <p>His wife was a total flake...</p>
+    </div>
     </div>
   </div>
-
-  <!-- Single item -->
-  <div class="carousel-item">
-    <img
-      src="./Assets/award.png"
-      class="d-block w-100"
-      alt="Canyon at Nigh"
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Second slide label</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-    </div>
-  </div>
-
-  <!-- Single item -->
-  <div class="carousel-item">
-    <img
-      src="./Assets/award.png"
-      class="d-block w-100"
-      alt="Cliff Above a Stormy Sea"
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Third slide label</h5>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-      </p>
-    </div>
-  </div>
+  <!-- Left and right controls/icons -->
+  <!--.carousel-control-prev adds a left (previous) button to the loop that lets the user cycle back through slides -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span> <!-- .carousel-control-prev-icon adds a icon for previous button -->
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span> <!-- .carousel-control-next-icon adds a icon for next button -->
+  </button>
 </div>
-<!-- Inner -->
-
-<!-- Controls -->
-<button
-  class="carousel-control-prev"
-  type="button"
-  data-mdb-target="#carouselBasicExample"
-  data-mdb-slide="prev"
->
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button
-  class="carousel-control-next"
-  type="button"
-  data-mdb-target="#carouselBasicExample"
-  data-mdb-slide="next"
->
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
 </div>
-<!-- Carousel wrapper -->
-    
+</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

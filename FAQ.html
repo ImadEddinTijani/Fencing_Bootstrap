@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fencing For Victory - FAQ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        section{
+          padding: 85px 15;
+        }
+      </style>
+
+<!-- /* CSS */ -->
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* .active, .accordion:hover { */
+  /* background-color: #ccc; */
+  /* } */
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+  padding: 0 18px;
+   background-color: white;
+  display: none;
+  overflow: hidden;
+  }
+  </style>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+    <a class="navbar-brand" href="index.html">Fencing For Victory</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="AboutUs.html">About Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="Courses.html">Courses <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="DiscussionForum.html">Discussion Forum <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active display-5">
+          <a class="nav-link" href="OurAwards.html">Our Awards <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active display-5">
+          <a class="nav-link" href="FAQ.html">FAQ <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="CourseRegistration.html">Course Registration <span class="sr-only">(current)</span></a>
+        </li>            
+      </ul>
+    </div>
+</nav>
+      
+          <!-- main image & intro text -->
+         <section id="ourTeam">
+          <div class="container-lg">
+              <h1>
+              <div class=" row g-4 display-7 justify-content-center align-items-center">  How can we help ? </div>
+              </h1>
+          </div>
+      
+          <!-- Accordion -->
+          <!-- HTML -->
+          <button class="accordion">What is the difference between Foil, Sabre and Epee ? </button>
+          <div class="panel">
+          <p> There are three weapons in modern fencing: foil, épée, and sabre. Each weapon has its own rules and strategies.
+          </p>
+          <p>The foil is a light thrusting weapon that targets the torso, but not the arms or legs.</p>
+          <p> The épée is a thrusting weapon like the foil, but heavier. In épée, the entire body is a valid target.</p>
+          <p>The sabre is a light cutting and thrusting weapon that targets the entire body above the waist, except the weapon hand.</p>
+          </div>
+      
+          <button class="accordion">Do I need to buy my fencing equipment ? </button>
+          <div class="panel">
+          <p>No, having your own fencing equipment is not required. We will provide you with all the necessary equipment !</p> 
+          </div>
+      
+          <button class="accordion">After registering, how do I pay ? </button>
+          <div class="panel">
+          <p>Yuo will have to pay in person at the welcoming desk. When finishing your registration form, you will confirmation email that will guide you through the payment procedures.</p>  
+          </div>
+      
+          <button class="accordion">How can I contact you ? </button>
+          <div class="panel">
+          <p>You can call us on 343-666-4773 from Monday till Friday (From 8:00 am till 4:00 pm)</p> 
+          <p>You can find our contact details in our confirmation email (if you registered for a course)</p>
+          <p>You can also find our contact details on Google by typing the "Fencing For Victory Ottawa". </p>
+
+
+          </div>
+      
+          <!-- JavaScript -->
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+      
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
